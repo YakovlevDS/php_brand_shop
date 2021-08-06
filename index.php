@@ -25,7 +25,9 @@
 
 <div id="content">
     <?php
-    echo "hello_world";
+    $myVar=23;
+    echo $myVar, " world --  ";
+    echo var_dump($myVar);
     ?>
     <!-- <div id="promo">
         <h1 id="promoText">
