@@ -24,12 +24,37 @@
 </header>
 
 <div id="content">
+
     <?php
-    $myVar=23;
-    echo $myVar, " world --  ";
-    echo var_dump($myVar);
+    $goods = [
+        [
+            'id' => 1,
+            'name' => 'Iphone',
+            'desc' => 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec qu',
+            'img' => '/images/goods/iphone.jpg',
+            'price' => '2000 $'
+        ],
+        [
+            'id' => 2,
+            'name' => 'HTC',
+            'desc' => 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec qu',
+            'img' => '/images/goods/htc.jpg',
+            'price' => '1200 $'
+        ],
+        [
+            'id' => 3,
+            'name' => 'Samsung',
+            'desc' => 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec qu',
+            'img' => '/images/goods/samsung.jpg',
+            'price' => '1400 $'
+        ],
+    ];
+
+    echo "<pre>";
+    var_dump($goods);
     ?>
-    <!-- <div id="promo">
+
+    <!--<div id="promo">
         <h1 id="promoText">
             Здесь будет рекламный заголовок
         </h1>
@@ -144,7 +169,7 @@
         </div>
 
 
-    </div>
+    </div>-->
 </div>
 
 <footer>
@@ -176,7 +201,7 @@
             <img class="socialItem" src="images/facebook-logo.svg">
         </div>
 
-        <div id="copyrights">&copy; Brandshop</div> -->
+        <div id="copyrights">&copy; Brand</div>
     </div>
 </footer>
 
