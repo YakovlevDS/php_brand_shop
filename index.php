@@ -60,6 +60,15 @@
 
         echo '<hr>';
     }
+     $page = $_GET['page'];
+
+    if (!isset($page)) {
+        echo 'здесь вместо этой надписи будет контент для главной страницы';
+    } elseif ($page == 'shop') {
+        echo 'здесь будет страница с товарами';
+    } elseif ($page == 'product') {
+        echo 'а тут у нас будет страница с открытым товаром';
+    }
 
     echo "<pre>";
     var_dump($goods);
